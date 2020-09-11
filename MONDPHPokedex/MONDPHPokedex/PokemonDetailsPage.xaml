@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MONDPHPokedex.PokemonDetailsPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    BackgroundColor="White"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+        <StackLayout Padding="25" VerticalOptions="FillAndExpand">
+            <Image
+                x:Name="imgThumbnail"
+                Margin="0,80"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+            <StackLayout>
+                <Label
+                    x:Name="lblName"
+                    FontSize="20"
+                    TextColor="Black" />
+                <Label x:Name="lblDescription" FontSize="16" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
