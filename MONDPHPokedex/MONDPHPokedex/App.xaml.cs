@@ -6,11 +6,13 @@ namespace MONDPHPokedex
 {
     public partial class App : Application
     {
+        public static Page Page { get; set; }
         public App()
         {
             InitializeComponent();
 
             MainPage = new NavigationPage(new MainPage());
+            Page = MainPage;
         }
 
         protected override void OnStart()

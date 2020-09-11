@@ -10,14 +10,13 @@
 
     <StackLayout>
         <SearchBar
-            x:Name="searchBar"
             Placeholder="Search..."
-            TextChanged="SearchBar_TextChanged" />
+            Text="{Binding Search}"
+            />
 
         <ListView
-            x:Name="listPokemon"
             HasUnevenRows="True"
-            ItemTapped="ListPokemon_ItemTapped"
+            SelectedItem="{Binding Pokemon, Mode=TwoWay}"
             ItemsSource="{Binding PokemonsList}">
             <ListView.ItemTemplate>
                 <DataTemplate>

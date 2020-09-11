@@ -10,16 +10,20 @@
     <ContentPage.Content>
         <StackLayout Padding="25" VerticalOptions="FillAndExpand">
             <Image
-                x:Name="imgThumbnail"
                 Margin="0,80"
+                HeightRequest="150"
+                WidthRequest="150"
+                Aspect="AspectFit"
+                Source="{Binding Pokemon.ImageUrl}"
                 HorizontalOptions="Center"
                 VerticalOptions="Center" />
             <StackLayout>
                 <Label
-                    x:Name="lblName"
                     FontSize="20"
+                    Text="{Binding Pokemon.Name}"
                     TextColor="Black" />
-                <Label x:Name="lblDescription" FontSize="16" />
+                <Label  FontSize="16"
+                        Text="{Binding Pokemon.Description}" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

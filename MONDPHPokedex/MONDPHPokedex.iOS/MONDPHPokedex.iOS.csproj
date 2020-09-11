@@ -122,13 +122,13 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1364" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\MONDPHPokedex\MONDPHPokedex.csproj">
-      <Project>{DB3C6483-FDCE-4F91-85BA-203A14C8D73D}</Project>
+      <Project>{806C1910-354E-4ABB-A3F7-CA62254B7B29}</Project>
       <Name>MONDPHPokedex</Name>
     </ProjectReference>
   </ItemGroup>
